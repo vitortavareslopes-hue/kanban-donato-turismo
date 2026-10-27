@@ -17,6 +17,63 @@ input,select,textarea{width:100%;padding:10px;border:1px solid #cbd7e8;border-ra
 .note{font-size:12px;color:var(--muted);margin:10px 0}.statusline{font-size:13px;margin:8px 0 14px}.hidden{display:none!important}.authwrap{max-width:440px;margin:38px auto}.panel{padding:22px}.panel h2{margin-top:0}.field{margin:12px 0}.field label{display:block;font-weight:650;margin-bottom:5px}.row{display:flex;gap:8px}.row>*{flex:1}
 dialog{border:1px solid var(--line);border-radius:16px;width:min(560px,calc(100% - 24px));padding:0;box-shadow:0 20px 60px #0b1c3a35}dialog::backdrop{background:#07142c88}.modal{padding:20px}.modalhead{display:flex;justify-content:space-between;align-items:center}.modalhead h2{margin:0}.modalfoot{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
 @media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.toolbar input{grid-column:1/-1}.column{min-width:82vw;width:82vw}.top{align-items:flex-start}}
+
+/* Melhorias visuais Donato Turismo */
+header {
+  box-shadow: 0 8px 24px #07142c20;
+}
+
+.stat, .panel {
+  box-shadow: 0 4px 14px #0a23510d;
+}
+
+.column {
+  border-top: 5px solid #94a3b8;
+  border-radius: 14px;
+  box-shadow: 0 5px 16px #0a23510d;
+}
+
+.column[data-col="ideias"] {
+  border-top-color: #8b5cf6;
+}
+
+.column[data-col="afazer"] {
+  border-top-color: #3b82f6;
+}
+
+.column[data-col="andamento"] {
+  border-top-color: #14b8a6;
+}
+
+.column[data-col="aguardando"] {
+  border-top-color: #f59e0b;
+}
+
+.column[data-col="concluido"] {
+  border-top-color: #22c55e;
+}
+
+.task {
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #0a23510d;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #0a235118;
+}
+
+.priority {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-weight: 800;
+}
+
+.tag {
+  border-radius: 999px;
+}
 </style>
 </head>
 <body>
